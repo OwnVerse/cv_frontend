@@ -45,9 +45,59 @@
             <div style="margin-top: 100px; margin-left: 100px">
                 <el-tabs :tab-position="tabPosition" style="height: 300px;">
                     <el-tab-pane label="账号">
+                        <el-row>原密码:
+                            <el-input
+                                    type = "password"
+                                    v-model = "message"
+                                    maxlength = "12">
+                            </el-input>
+                        </el-row>
+
+                        <el-row>新密码:
+                            <el-input
+                                    type = "password"
+                                    v-model = "message"
+                                    maxlength = "12">
+                            </el-input>
+                        </el-row>
+
+                        <el-row>确认新密码:
+                            <el-input
+                                    type = "password"
+                                    v-model = "message"
+                                    maxlength = "12">
+                            </el-input>
+                        </el-row>
+
+                        <button v-on:click=""  style = "font-size:15px;">更新密码</button>
 
                     </el-tab-pane>
                     <el-tab-pane label="通知">
+                         <el-row>手机号:
+                            <el-input
+                                    type = "textarea"
+                                    v-model = "message"
+                                    maxlength = "12">
+                            </el-input>
+                        </el-row>
+
+                        <el-row>邮箱:
+                            <el-input
+                                    type = "textarea"
+                                    v-model = "message"
+                                    maxlength = "12">
+                            </el-input>
+                        </el-row>
+                        <el-row>是否接收通知：
+                            <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value="0"
+                            />
+                        </el-row>
+
+                        <button v-on:click=""  style = "font-size:15px;">更新通知</button>
 
                     </el-tab-pane>
                     <el-tab-pane label="设置">
